@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "zodimithra",
+    "slug": "zodimithra",
+    "version": "1.0.9",
+    "orientation": "portrait",
+    "icon": "./assets/images/zodimithra.png",
+    "scheme": "zodimithra",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "updates": {
+      "enabled": false
+    },
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "backgroundColor": "#6c1d13"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hc.zodimithra",
+      "appleTeamId": "83A23C4482",
+      "buildNumber": "7"
+    },
+    "android": {
+      "package": "io.zodimithra.main",
+      "versionCode": 9,
+      "usesCleartextTraffic": true,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/zodimithra.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "$(PRODUCT_NAME) uses your location to generate personalised horoscopes and accurate compass readings aligned to your coordinates.",
+          "locationAlwaysPermission": "$(PRODUCT_NAME) uses your location while the app is open to keep your astrological profile and compass readings accurate.",
+          "locationWhenInUsePermission": "$(PRODUCT_NAME) uses your location to generate personalised horoscopes and accurate compass readings aligned to your coordinates.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "$(PRODUCT_NAME) uses the camera so you can take or update your profile photo.",
+          "microphonePermission": "$(PRODUCT_NAME) uses the microphone when you choose to record a voice note inside the app.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "$(PRODUCT_NAME) uses device motion sensors to power the compass and star-map features."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          },
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "minSdkVersion": 24
+          }
+        }
+      ],
+      "./translucent-default-splash-screen-config",
+      [
+        "expo-dev-client",
+        {
+          "launchMode": "most-recent"
+        }
+      ],
+      [
+        "@hot-updater/react-native",
+        {
+          "channel": "production"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

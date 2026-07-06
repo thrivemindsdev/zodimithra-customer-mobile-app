@@ -1,0 +1,5 @@
+{
+  "name": "oxc-transform",
+  "version": "0.121.0",
+  "main": "index.js"
+}
