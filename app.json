@@ -2,7 +2,7 @@
   "expo": {
     "name": "zodimithra",
     "slug": "zodimithra",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "orientation": "portrait",
     "icon": "./assets/images/zodimithra.png",
     "scheme": "zodimithra",
@@ -23,7 +23,7 @@
     },
     "android": {
       "package": "io.zodimithra.main",
-      "versionCode": 9,
+      "versionCode": 10,
       "usesCleartextTraffic": true,
       "permissions": [
         "android.permission.INTERNET",
